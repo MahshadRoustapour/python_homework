@@ -18,7 +18,7 @@ for i in range(200):
                         """))
 
     if answer == 1:
-        name = input("Enter a to do to Add: ").lower
+        name = input("Enter a to do to Add: ").lower()
         if name not in names:
             names.append(name)
             statuses.append(False)
@@ -30,7 +30,7 @@ for i in range(200):
         for i , name in enumerate(names):
             print(i + 1, names[i], statuses[i], durations[i])
     elif answer == 3:
-        name = input("Enter a to do to Remove: ").lower
+        name = input("Enter a to do to Remove: ").lower()
         if name in names:
             i = names.index(name)
             names.pop(i)
@@ -40,9 +40,9 @@ for i in range(200):
         else:
             print("Does not exist")
     elif answer == 4:
-        name = input("Enter a To Do to Edit: ").lower
+        name = input("Enter a To Do to Edit: ").lower()
         if name in names:
-            new_name = input("Enter your new To Do: ").lower
+            new_name = input("Enter your new To Do: ").lower()
             if new_name not in names:
                 i = names.index(name)
                 names[i] = new_name
@@ -52,14 +52,14 @@ for i in range(200):
         else:
             print("Does not exist") 
     elif answer == 5:
-        name = input("Enter a To Do you are looking for: ").lower
+        name = input("Enter a To Do you are looking for: ").lower()
         if name in names:
             i = names.index(name)
             print(f"{name} ----> statuse : {statuses[i]}, duration : {durations[i]}")
         else:
             print("Does not exist")
     elif answer == 6:
-        name = input("Enter a To Do you have Done: ").lower
+        name = input("Enter a To Do you have Done: ").lower()
         time = input("Enter How long it took: ")
         if name in names:
                 i = names.index(name)
