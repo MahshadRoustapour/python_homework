@@ -92,21 +92,21 @@ while True:
                         """))
 
     if answer == 1:
-        name = input("Enter a to do to Add: ").lower
+        name = input("Enter a to do to Add: ").lower()
         Add(name)
     elif answer == 2:
         Display()
     elif answer == 3:
-        name = input("Enter a to do to Remove: ").lower
+        name = input("Enter a to do to Remove: ").lower()
         Remove(name)
     elif answer == 4:
-        name = input("Enter a To Do to Edit: ").lower
+        name = input("Enter a To Do to Edit: ").lower()
         Edit(name)
     elif answer == 5:
-        name = input("Enter a To Do you are looking for: ").lower
+        name = input("Enter a To Do you are looking for: ").lower()
         Search(name)
     elif answer == 6:
-        name = input("Enter a To Do you have Done: ").lower
+        name = input("Enter a To Do you have Done: ").lower()
         time = input("Enter How long it took: ")
         Done(name, time)
     elif answer == 7:
