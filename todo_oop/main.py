@@ -2,7 +2,7 @@ from manager import *
 def main():
     manager1 = Manager()
     while True:
-        task_ = input("Add, Done, Display, Ditailes, Exit")
+        task_ = input("Add, Done, Display, Details, Exit")
         if task_ == "Add":
             title = input("title: ")
             description = input("description :")
@@ -20,7 +20,7 @@ def main():
         elif task_ == "Display":
             manager1.display()
 
-        elif task_ == "Ditailes":
+        elif task_ == "Details":
             manager1.summary()
 
         elif task_ == "Exit":
