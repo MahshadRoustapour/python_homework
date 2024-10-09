@@ -1,10 +1,10 @@
 class Task:
-    def __init__(self, title,  description, id_, statrt_time, statuse, end_time = None):
+    def __init__(self, title,  description, id_, start_time, statuse, end_time = None):
         self.title = title
         self.description = description
         Task.is_valide(id_)
         self.id = id_
-        self.start_time = statrt_time
+        self.start_time = start_time
         self.end_time = end_time
         self.statuse = statuse
 
