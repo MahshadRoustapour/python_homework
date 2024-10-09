@@ -4,14 +4,13 @@ class Manager:
     def __init__(self):
         self.tasks = {}
     
-    def create_task(self, title,  description, id_, statuse, statrt_time = None, end_time = None):
+    def create_task(self, title,  description, id_, statuse, statrt_time, end_time = None):
         new_task = Task(title, description, id_, statuse, statrt_time, end_time)
         return new_task
 
     def add(self, task):
         if task.id_ not in self.tasks:
             self.tasks[task.id_] = task 
-            self.tasks[task.statuse] = False
             print("Added")
         else:
             print("already exist!")
