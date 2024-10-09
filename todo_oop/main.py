@@ -9,7 +9,7 @@ def main():
             description = input("description :")
             id_ = input("id :")
             statrt_time = input("statrt time: ")
-            task1 = Manager.create_task(title,description,id_, statrt_time, statuse=False, end_time=None)
+            task1 = manager1.create_task(title,description,id_, statrt_time, statuse=False, end_time=None)
             manager1.add(task1)
 
         elif task_ == "Done":
