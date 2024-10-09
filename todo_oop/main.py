@@ -4,7 +4,10 @@ def main():
     while True:
         task_ = input("Add, Done, Display, Ditailes, Exit")
         if task_ == "Add":
-            title,description,id_,statrt_time = input("title,description,id_,statrt_time").split(",")
+            title = input("title: ")
+            description = input("description :")
+            id_ = input("id :")
+            statrt_time = input("statrt time: ")
             task1 = Manager.create_task(title,description,id_,statrt_time)
             manager1.add(task1)
 
