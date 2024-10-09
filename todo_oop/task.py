@@ -10,7 +10,7 @@ class Task:
 
     def __str__(self):
         return f"""title---> {self.title}, description---> {self.description},
-            id---> {self.id}, start time---> {self.start_time}, end time---> {self.end_time},
+            id---> {self.id_}, start time---> {self.start_time}, end time---> {self.end_time},
             status---> {self.statuse}"""
         
     @staticmethod
